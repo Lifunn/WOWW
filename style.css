@@ -1,98 +1,23 @@
-body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #ffdee9 0%, #ff99cc 100%);
-    margin: 0;
-    color: #333;
-    text-align: center;
-    overflow: hidden; /* Mencegah scrollbar jika ada animasi besar */
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taman Bunga Andromeda</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div id="cosmic-canvas">
+        <div class="instructions" id="instructions">
+            <h1>Klik dimana aja Mbak</h1>
+            <p>Semangat ya Drama nya Mbak e 😊</p>
+        </div>
+    </div>
 
-.container {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease-out;
-}
+    <script src="script.js"></script>
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-h1 {
-    color: #e91e63; /* Warna pink tua untuk judul */
-    margin-bottom: 15px;
-    font-size: 2.5em;
-}
-
-p {
-    font-size: 1.2em;
-    margin-bottom: 25px;
-    color: #555;
-}
-
-#flowerButton {
-    background-color: #e91e63; /* Warna pink tua */
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.1em;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
-}
-
-#flowerButton:hover {
-    background-color: #c2185b; /* Warna pink lebih gelap saat hover */
-    transform: translateY(-3px);
-}
-
-#flowerButton:active {
-    transform: translateY(-1px);
-}
-
-.hidden {
-    display: none;
-}
-
-#flowerContainer {
-    position: relative; /* Penting untuk posisi absolut anak-anaknya */
-    width: 100%;
-    min-height: 600px; /* Beri ruang yang cukup untuk beberapa bunga */
-    margin-top: 30px;
-    animation: zoomIn 0.5s ease-out;
-}
-
-@keyframes zoomIn {
-    from { opacity: 0; transform: scale(0.5); }
-    to { opacity: 1; transform: scale(1); }
-}
-
-#flowerImage {
-    max-width: 100%;
-    height: auto;
-    max-height: 400px; /* Batasi tinggi gambar agar tidak terlalu besar */
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
-}
-
-#flowerContainer p {
-    font-style: italic;
-    color: #e91e63;
-    font-size: 1.3em;
-    /* Hapus margin-bottom jika tidak ada gambar lagi di atasnya, atau sesuaikan */
-    /* margin-bottom: 15px; */ 
-}
-
-/* Gaya untuk bunga animasi dipindahkan ke script.js untuk kemudahan, 
-   namun bisa juga diletakkan di sini jika diinginkan.
-   Jika Anda ingin memisahkannya, pindahkan bagian .flower-art, .flower-center, .flower-petal, 
-   dan @keyframes yang relevan dari script.js ke sini.
-*/
+</body>
+</html>
